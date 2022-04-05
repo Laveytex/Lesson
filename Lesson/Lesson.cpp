@@ -4,12 +4,15 @@ void print()
 {
 	std::cout << "Hellow\n";
 }
+int printint(int toprint)
+{
+	std::cout << toprint;
+	return toprint;
+}
+
 int main()
 {	
-	int x=100;
-	int y=x+100;
-	int mult = x * y;
-
-    std::cout << "Hello World!\n";
-	
+	print();
+	std::cout << printint(123);
+	return 0;
 }
